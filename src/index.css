@@ -1,0 +1,14 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%; /* Ocupa 100% da altura da tela */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0;
+    /* Recomendado: define um font-family padrão para todo o app */
+    font-family: Arial, sans-serif; 
+}

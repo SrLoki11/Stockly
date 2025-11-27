@@ -1,0 +1,130 @@
+:root {
+  --bg-dark: #000;
+  --text-light: #fff;
+  --gray: #808080;
+  --gradient: linear-gradient(90deg, #aa00ff, #ff6a00);
+}
+
+/* CONTAINER GERAL */
+.login-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* LADO ESQUERDO (FORMULÁRIO) */
+.login-left {
+  width: 40%;
+  height: 100vh;
+  padding: 80px 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.login-title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.login-title .dot {
+  color: #ff6a00;
+}
+
+/* FORMULÁRIO */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #111;
+  color: var(--text-light);
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #ff6a00;
+}
+
+/* Esqueci minha senha */
+.forgot-password {
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-top: -10px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  color: #fff;
+}
+
+/* Botão Entrar */
+.btn-login {
+  margin-top: 10px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--gradient);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn-login:hover {
+  opacity: 0.9;
+}
+
+/* Criar conta */
+.register-link {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #fff;
+}
+
+/* LADO DIREITO (IMAGEM FULLSCREEN) */
+.login-right {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* IMAGEM DE FUNDO DA DIREITA */
+.login-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("\Livros.png");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  opacity: 0.25;
+  filter: brightness(0.6);
+}
