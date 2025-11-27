@@ -4,7 +4,8 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <BrowserRouter>
+    
+    <BrowserRouter basename="/Stockly"> 
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
