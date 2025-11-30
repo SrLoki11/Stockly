@@ -5,8 +5,8 @@ function Login() {
   const navigate = useNavigate();
 
   function handleLogin(e) {
-    e.preventDefault(); // impede o reload da página
-    navigate("/home"); // envia o usuário para a próxima página
+    e.preventDefault(); 
+    navigate("/home"); 
   }
 
   return (
